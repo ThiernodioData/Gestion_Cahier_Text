@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Material icon -->
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="stylesheet" href="styles-responsive2.css" />
+    <link rel="stylesheet" href="style3.css">
+    <link rel="icon" type="image/png" href="images/logosup.png">
+    <link rel="stylesheet" href="styleOnOffInternet.css">
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="onOffInternet" id="onOffInternet">
+
+    </div>
+
+
+    
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="main-sidebar">
+            <header class="aside-header">
+                <div class="brand" id="logo">
+                    <img src="images/logosup.png"  alt="Logo" />
+                    <h3>CAHIER DE TEXT</h3>
+                </div>
+                <div class="close" id="closeSidebar">
+                    <span class="material-icons-sharp"> close </span>
+                </div>
+            </header>
+
+            <div class="sidebar" id="sidebar">
+                <ul class="list-items">
+                    <li class="item" id="tableauBord">
+                        <a href="#" class="active">
+                            <span class="material-icons-sharp">
+                                dashboard
+                            </span>
+                            <span>Tableau de bord</span>
+                        </a>
+                    </li>
+                    <li class="item" id="cahierText">
+                        <a href="#" class="active">
+                            <span class="material-icons-sharp">
+                                people
+                            </span>
+                            <span>Cahier de Text</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <span class="material-symbols-outlined">
+                                calendar_month
+                            </span>
+                            <span>Emplois du Temps</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="">
+                            <span class="material-icons-sharp">
+                                insights
+                            </span>
+                            <span>Statistiques</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <span class="material-icons-sharp">
+                                textsms
+                            </span>
+                            <span>Messagerie</span>
+                            <span class="message-count">17</span>
+                        </a>
+                    </li>
+    
+                    <li class="item">
+                        <a href="#">
+                            <span class="material-icons-sharp">
+                                report
+                            </span>
+                            <span>Rapports</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <span class="material-icons-sharp">
+                                settings
+                            </span>
+                            <span>Reglages</span>
+                        </a>
+                    </li>
+                    <li class="item" id="addNewDeparment2">
+                        <a href="#">
+                            <span class="material-icons-sharp"> add </span>
+                            <span>Add Département</span>
+                        </a>
+                    </li>
+                    <li class="item" id="seDeconnecter">
+                        <a href="#">
+                            <span class="material-icons-sharp">
+                                logout
+                            </span>
+                            <span>Se Deconnecter</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="main-container">
+            <div id="dashBody1">        
+                <h1 class="main-title">Dashboard</h1>
+
+                <!-- CARD -->
+                <div class="insights">
+                    <div class="card" id="card1">
+                        <div class="card-container">
+                            <div class="card-header">
+                                <span class="material-icons-sharp">
+                                    bar_chart
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-info">
+                                    <h3>Département</h3>
+                                    <h1>ESITEC</h1>
+                                </div>
+
+                                <div class="card-progress">
+                                    <svg width="96" height="96">
+                                        <circle
+                                            id="circle1"
+                                            cx="38"
+                                            cy="38"
+                                            r="36"
+                                            class="stroke-yellow"
+                                        ></circle>
+                                    </svg>
+                                    <div class="percentage">
+                                        <p>78%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <small>Sur les 48H precedentes</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card2">
+                        <div class="card-container">
+                            <div class="card-header">
+                                <span class="material-icons-sharp">
+                                    add_shopping_cart
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-info">
+                                    <h3>Département</h3>
+                                    <h1>MERCURE</h1>
+                                </div>
+
+                                <div class="card-progress">
+                                    <svg width="96" height="96">
+                                        <circle
+                                            id="circle2"
+                                            cx="38"
+                                            cy="38"
+                                            r="36"
+                                            class="stroke-fuscha"
+                                        ></circle>
+                                    </svg>
+                                    <div class="percentage">
+                                        <p>59%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <small>Sur les 48H precedentes</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" id="card3">
+                        <div class="card-container">
+                            <div class="card-header">
+                                <span class="material-icons-sharp">
+                                    group_add
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-info">
+                                    <h3>Département</h3>
+                                    <h1>TRANSPORT</h1>
+                                </div>
+
+                                <div class="card-progress">
+                                    <svg
+                                        width="96"
+                                        height="96"
+                                        class="stroke-cyan"
+                                    >
+                                        <circle
+                                            id="circle3"
+                                            cx="38"
+                                            cy="38"
+                                            r="36"
+                                        ></circle>
+                                    </svg>
+                                    <div class="percentage">
+                                        <p>30%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <small>Sur les 48H precedentes</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                
+
+                <!-- RECENT ORDERS -->
+                <section class="recent-orders">
+                    <div class="ro-title">
+                        <h2 class="recent-orders-title">Commandes recentes</h2>
+                        <a href="#" class="show-all">Tout afficher</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>NOM</th>
+                                <th>PRENOM</th>
+                                <th>NIVEAU</th>
+                                <th>MATIERE</th>
+                                <th>Statut</th><!--present absence absence-justifier-->
+                                <th>DATE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <!--    <tr>
+                                <td>Diallo</td>
+                                <td>Thierno Idrissa</td>
+                                <td>LICENCE 1</td>
+                                <td>JavaScript</td>
+                                <td class="text-fuscha">present</td>< ! -- present(coleur vert),absence(coleur rouge), absence-justifier(coleur jaune)-->
+                        <!--        <td>24/07/2024</td>
+                            </tr>
+                         -->
+
+
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <div id="dashBody2">        
+                <div class="container" id="container">
+                    <div class="setup order" id="setup">
+                        <div class="info1">
+                            <label for="numStudents">Entrez le nombre d'étudiants :</label>
+                            <input type="number" id="numStudents" min="1">
+                        </div>
+                        <div class="info2">
+                            <label for="choixDepartement">Choisir le Département :</label>
+                            <select id="choixDepartement">
+                                <option value="ESITECH">ESITECH</option>
+                                <option value="MERCURE">MERCURE</option>
+                                <option value="TRANSPORT">TRANSPORT</option>
+                            </select>
+                        </div>
+                        <div class="info2">
+                            <label for="choixNiveau">Choisir le Niveau :</label>
+                            <select id="choixNiveau">
+                                <option value="LICENCE 1">LICENCE 1</option>
+                                <option value="LICENCE 2">LICENCE 2</option>
+                                <option value="LICENCE 3">LICENCE 3</option>
+                                <option value="MASTER 1">MASTER 1</option>
+                                <option value="MASTER 2">MASTER 2</option>
+                                <option value="DOCTORAT">DOCTORAT</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="info2">
+                            <label for="choixMatiere">Choisir la Matiére :</label>
+                            <select id="choixMatiere">
+                                <option value="COMPTABLE">COMPTABLE</option>
+                                <option value="MANAGEMENT">MANAGEMENT</option>
+                                <option value="RESEAU">RESEAU</option>
+                                <option value="FINANCE">FINANCE</option>
+                                <option value="PROGRAMMATION" selected>PROGRAMMATION</option>
+                                <option value="SPORT">SPORT</option>
+                            </select>
+                        </div>
+                        <small id="small"></small>
+                        <div class="btngroup1" id="btngroup1">
+                            <button id="enterStudents" class="new-product">Saisir les étudiants</button>
+                            <button id="usePredefinedList" class="new-product">la liste prédéfinie</button>
+                        </div>      
+                    </div>
+                    <div class="attendance-form hide" id="attendanceForm">
+                        <form id="studentsForm">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar droite -->
+        <aside class="extrabar">
+            <header class="header-right">
+                <button class="toggle-menu-btn" id="openSidebar">
+                    <span class="material-icons-sharp"> menu </span>
+                </button>
+
+
+
+
+                <div class="toggle-theme">
+                    <span class="material-icons-sharp active">
+                        tungsten
+                    </span>
+                    <span class="material-icons-sharp"> dark_mode </span>
+                </div>
+                <div class="profile">
+                    <div class="profile-info">
+                        <p>Salut, <strong>Coding</strong></p>
+                        <small>Admin</small>
+                    </div>
+                    <div class="profile-image">
+                        <img src="images/img.jpg" alt="" width="100%" />
+                    </div>
+                </div>
+            </header>
+
+            <!-- Info recentes -->
+            <div class="recent-updates">
+                <h2>Infos recentes</h2>
+                <div class="updates-container">
+                    <div class="update">
+                        <div class="profile-image">
+                            <img
+                                src="images/img.jpg"
+                                alt=""
+                                width="100%"
+                            />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <strong>Cherif Tall</strong> a ajouter une nouvelle liste d'etudiant ESITEC.
+                            </p>
+                            <small>Il y a 2 jours</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-image">
+                            <img
+                                src="images/img.jpg"
+                                alt=""
+                                width="100%"
+                            />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <strong>Docteur Faye</strong> a ajouter un nouveau Emplois du temps pour ESITEC.
+
+                            </p>
+                            <small>Il y a 1 heures</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-image">
+                            <img
+                                src="images/img.jpg"
+                                alt=""
+                                width="100%"
+                            />
+                        </div>
+                        <div class="message">
+                            <p>
+                                
+                                <strong>Cherif Tall</strong> a ajouter une nouvelle liste d'etudiant MERCURE.
+
+                            </p>
+                            <small>Il y a 3 heures</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Stat -->
+            <div class="analytics">
+                <h2>Evolution des Cours</h2>
+                <div class="order direct">
+                    <div class="order-icon">
+                        <span class="material-symbols-outlined">
+                            groups
+                        </span>
+                    </div>
+                    <div class="order-details">
+                        <div class="info">
+                            <h3>TAUX DE PRESENT</h3>
+                            <small>48H precedentes</small>
+                        </div>
+                        <h4 class="percent-evo text-cyan">+18%</h4>
+                        <h3>2417</h3>
+                    </div>
+                </div>
+                <div class="order online">
+                    <div class="order-icon">
+                        <span class="material-symbols-outlined">
+                            person_remove
+                        </span>
+                    </div>
+                    <div class="order-details">
+                        <div class="info">
+                            <h3>TAUX D'ABSENCE</h3>
+
+                            <small>48H precedentes</small>
+                        </div>
+                        <h4 class="percent-evo text-fuscha">-5%</h4>
+                        <h3>619</h3>
+                    </div>
+                </div>
+
+
+                <div class="order customers">
+                    <div class="order-icon">
+                        <span class="material-icons-sharp">
+                            group_add
+                        </span>
+                    </div>
+                    <div class="order-details">
+                        <div class="info">
+                            <h3>COMPREHENSION DU COURS</h3>
+                            <small>48H precedentes</small>
+                        </div>
+                        <h4 class="percent-evo text-cyan">+22%</h4>
+                        <h3>411</h3>
+                    </div>
+                </div>
+
+
+                <button class="new-product" id="addNewDeparment">
+                    <span class="material-icons-sharp"> add </span>
+                    <h3>Nouveau Département</h3>
+                </button>
+            </div>
+            
+        </aside>
+
+
+
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+    <script src="onOffInternet.js"></script>
+</body>
+</html>
